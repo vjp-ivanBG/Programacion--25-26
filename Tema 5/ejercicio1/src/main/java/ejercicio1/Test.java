@@ -15,7 +15,7 @@ public class Test {
 
         // Establezco los atributos
         miCoche.establecerMarca("Toyota");
-        miCoche.establecerModelo("Corolla");
+        miCoche.establecerModelo("Citroen");
         miCoche.establecerColor("Rojo");
 
         cochePadre.establecerMarca("Ford");
@@ -37,10 +37,10 @@ public class Test {
         cochePadre.apagarCoche();
 
         // Mostrar estado de ambos coches
-        System.out.println("Estado de miCoche:");
+        System.out.println("Estado de Mi coche:");
         miCoche.obtenerEstado();
 
-        System.out.println("Estado de cochePadre:");
+        System.out.println("Estado del Coche Padre:");
         cochePadre.obtenerEstado();
     }
 }

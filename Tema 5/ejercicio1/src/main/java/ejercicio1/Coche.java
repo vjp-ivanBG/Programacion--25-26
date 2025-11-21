@@ -1,15 +1,14 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 package ejercicio1;
 
 /**
  *
  * @author alumno
  */
-public class Ejercicio1 {
-    public class Coche {
+public class Coche {
     // Atributos privados
     private String marca;
     private String modelo;
@@ -56,9 +55,4 @@ public class Ejercicio1 {
         System.out.println("Velocidad: " + velocidad);
         System.out.println("Motor encendido: " + motorEncendido);
     }
-}
-
-
-
-
-}
+ }
