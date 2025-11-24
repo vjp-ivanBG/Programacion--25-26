@@ -14,13 +14,15 @@ public class Direccion {
     String puerta;
     String ciudad;
 
+    //Constructor
     public Direccion(String calle, int numero, String puerta, String ciudad) {
         this.calle = calle;
         this.numero = numero;
         this.puerta = puerta;
         this.ciudad = ciudad;
     }
-
+    
+    //Método que muestra la dirección
     public String mostrarDireccion() {
         return "    Calle: " + calle + "\n" +
                "    Número: " + numero + "\n" +

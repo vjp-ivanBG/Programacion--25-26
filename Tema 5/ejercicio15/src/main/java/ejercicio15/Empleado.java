@@ -12,13 +12,14 @@ public class Empleado {
     String nombre;
     int salario;
     Direccion direccion;
-
+    
+    //Constructor 
     public Empleado(String nombre, int salario, Direccion direccion) {
         this.nombre = nombre;
         this.salario = salario;
         this.direccion = direccion;
     }
-
+    //Método para mostrar los datos del empleado
     public void mostrarDatos() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Salario: " + salario);
