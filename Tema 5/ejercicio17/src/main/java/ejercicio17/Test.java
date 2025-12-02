@@ -34,15 +34,15 @@ public class Test {
             System.out.println("Tu respuesta: " + respuestasUsuario[i]);
 
             if (preguntas[i].esCorrecta(respuestasUsuario[i])) {
-                System.out.println("✅ ¡Correcto!");
+                System.out.println("¡Correcto!");
                 nota += 2.5;
             } else {
-                System.out.println("❌ Incorrecto. La respuesta correcta es: " + preguntas[i].respuesta);
+                System.out.println("Incorrecto. La respuesta correcta es: " + preguntas[i].respuesta);
             }
         }
 
         //Muestra la nota final
-        System.out.println("\nTu nota final es: " + nota + " sobre 10");
+        System.out.println("Tu nota final es: " + nota + " sobre 10");
     }
 }
 
