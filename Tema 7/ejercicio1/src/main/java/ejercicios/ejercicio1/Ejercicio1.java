@@ -13,8 +13,8 @@ import java.util.Scanner;
 public class Ejercicio1 {
     
     public static void main(String[] args) {
-        int[] misNumeros = pedirNumeros();  // Captura los números
-        mostrarPares(misNumeros);           // Muestra los pares
+        int[] misNumeros = pedirNumeros();  
+        mostrarPares(misNumeros);           
     }
     
     // Método que pide 10 números enteros al usuario y los guarda en un array
