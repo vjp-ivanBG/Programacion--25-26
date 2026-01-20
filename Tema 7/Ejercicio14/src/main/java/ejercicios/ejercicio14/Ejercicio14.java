@@ -40,7 +40,7 @@ public class Ejercicio14 {
         }
     }
     
-    //Método que busca la temperatura media del mes con un bucle que busca el numero más repetido
+    //Método que busca la temperatura media del mes sumando todos los numeros y dividiendolo entre los días del mes
     public static void temperaturaMedia (int media[][]) {
         int i,j;
         int numero = 0;
