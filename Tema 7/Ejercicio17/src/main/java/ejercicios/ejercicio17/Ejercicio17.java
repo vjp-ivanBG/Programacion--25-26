@@ -10,7 +10,7 @@ package ejercicios.ejercicio17;
  */
 public class Ejercicio17 {
     
-    
+    //Método que rellena el array con números aleatorios del 1 al 9
     public static void rellenarArray (int vector[]) {
         int i;
         for ( i = 0; i < 9; i++) {
@@ -18,6 +18,7 @@ public class Ejercicio17 {
         }
     }
     
+    //Método que muestra el array pero de forma desordenada
     public static void mostrarArray (int vector[]) {
         int i;
         for ( i = 0; i < 9; i++) {
@@ -25,22 +26,26 @@ public class Ejercicio17 {
         }
     }
     
-    public static void ordenarArray (int matriz[]) {
-        int j;
-        int i;
-        int aux = 0;
-        for ( i = 0; i < matriz.length; i++) {
-            for ( j = 0; j < matriz.length; j++) {
-                if (matriz[j] > matriz[j + 1]) {
-                aux = matriz[j];
-                matriz[j] = matriz[j + 1];
-                matriz[j + 1] = aux;
+    //Método que ordena el array de mayor a menor con ayuda de un auxiliar
+    public static void ordenarArray(int matriz[]) {
+    
+        int aux;
+        for (int i = 0; i < matriz.length - 1; i++) {
+            for (int j = 0; j < matriz.length - 1 - i; j++) {
+                if (matriz[j] < matriz[j + 1]) { // Orden descendente
+                    aux = matriz[j];
+                    matriz[j] = matriz[j + 1];
+                    matriz[j + 1] = aux;
                 }
             }
         }
+        for (int i = 0; i < matriz.length; i++) {
+        System.out.println(matriz[i]);
+        }
     }
+
     
-    
+    //Método main que llama a los demás métodos
     public static void main(String[] args) {
         int[] array = new int[9];
         rellenarArray(array);
