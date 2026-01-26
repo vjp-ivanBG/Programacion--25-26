@@ -19,7 +19,6 @@ public class Ejercicio16 {
         double[][] notas = new double[6][4];
 
         int opcion;
-
         do {
         mostrarMenu();
         opcion = entrada.nextInt();
@@ -72,7 +71,7 @@ public class Ejercicio16 {
         String[] asignaturas = {"Lengua", "Mates", "Historia", "Física"};;
         String[] alumnos = {"Pepe", "Juan", "Ana", "Marta", "Pedro", "María"};;
         for (int i = 0; i < alumnos.length; i++) {
-            System.out.println("\nNotas de " + alumnos[i] + ":");
+            System.out.println("Notas de " + alumnos[i] + ":");
             for (int j = 0; j < asignaturas.length; j++) {
                 double redondeada = Math.round(notas[i][j] * 100.0) / 100.0;
                 System.out.println("  " + asignaturas[j] + ": " + redondeada);
@@ -96,7 +95,7 @@ public class Ejercicio16 {
                 mejorMedia = media;
                 indiceMejor = i;
             }
-        }double redondeada = Math.round(mejorMedia * 100.0) / 100.0;
+        }double redondeada = Math.round(mejorMedia);
         System.out.println("El mejor alumno es " + alumnos[indiceMejor] + " con una media de " + redondeada);
     }
 
@@ -140,7 +139,7 @@ public class Ejercicio16 {
             }
         }
 
-        double redondeada = Math.round(medias[indiceMin] * 100.0) / 100.0;
+        double redondeada = Math.round(medias[indiceMin]);
         System.out.println("La asignatura más difícil es " + asignaturas[indiceMin] + " con una media de " + redondeada);
     }
 }
