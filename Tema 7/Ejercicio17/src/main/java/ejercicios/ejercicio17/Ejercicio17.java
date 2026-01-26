@@ -32,7 +32,7 @@ public class Ejercicio17 {
         int aux;
         for (int i = 0; i < matriz.length - 1; i++) {
             for (int j = 0; j < matriz.length - 1 - i; j++) {
-                if (matriz[j] < matriz[j + 1]) { // Orden descendente
+                if (matriz[j] < matriz[j + 1]) {
                     aux = matriz[j];
                     matriz[j] = matriz[j + 1];
                     matriz[j + 1] = aux;
