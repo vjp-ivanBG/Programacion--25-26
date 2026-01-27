@@ -13,7 +13,7 @@ public class Ejercicio19 {
     //Método que rellena el array
     public static void rellenarArray(int[] vector) {
         for (int i = 0; i < vector.length; i++) {
-            vector[i] = (int)(Math.random() * 71) + 10;
+            vector[i] = (int)(Math.random() * 70) + 10;
         }
     }
     
@@ -54,14 +54,14 @@ public class Ejercicio19 {
 
     //Método que obtiene el número más repetido
     public static int obtenerMasRepetido(int[] vector) {
-        int[] frecuencia = new int[81]; // índice 10 a 80
+        int[] frecuencia = new int[80];
         for (int num : vector) {
             frecuencia[num]++;
         }
 
         int maxRepeticiones = 0;
         int valorMasRepetido = 0;
-        for (int i = 10; i <= 80; i++) {
+        for (int i = 10; i < 80; i++) {
             if (frecuencia[i] > maxRepeticiones) {
                 maxRepeticiones = frecuencia[i];
                 valorMasRepetido = i;

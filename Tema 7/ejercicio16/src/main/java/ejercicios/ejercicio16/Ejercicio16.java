@@ -73,7 +73,7 @@ public class Ejercicio16 {
         for (int i = 0; i < alumnos.length; i++) {
             System.out.println("Notas de " + alumnos[i] + ":");
             for (int j = 0; j < asignaturas.length; j++) {
-                double redondeada = Math.round(notas[i][j] * 100.0) / 100.0;
+                double redondeada = Math.round(notas[i][j]);
                 System.out.println("  " + asignaturas[j] + ": " + redondeada);
             }
         }
