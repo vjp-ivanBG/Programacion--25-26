@@ -38,7 +38,7 @@ public class Ejercicio16 {
         } while (opcion != 3);
     }
 
-    // Método que hace el menú de administración
+    //Método que hace el menú de administración
     public static void menuAdministracion() {
         int opcion;
 
